@@ -20,7 +20,7 @@
         const div=document.createElement('div');
         div.className='card';
         div.innerHTML = `<div class="h2">${c}</div>
-          <p class="muted">Supported dataset: 10 years hourly.</p>
+          <p class="muted">Supported dataset: 11 years, hourly.</p>
           <a class="btn" href="guide.html" onclick="localStorage.selectedCity='${c}'">Use this city</a>`;
         box.appendChild(div);
       });
@@ -52,7 +52,6 @@
   <main class="container">
     <div class="card">
       <div class="h2">Choose a city</div>
-      <p class="muted">Or continue with your own city (e.g., Dubai) , The Guide lists the exact NREL attributes to select.</p>
       <label for="q">Search</label>
       <input id="q" placeholder="Type a city" oninput="search(event)">
     </div>
@@ -75,4 +74,5 @@
     <footer><div class="container"><p>&copy; 2025 Smart Datacenter Siting , All rights reserved.</p></div></footer>
 </body>
 </html>
+
 
